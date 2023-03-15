@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        .BT
+        {
+            width: 90px;
+            height: 60px;
+            background-color: darkturquoise;
+            font-size: 10px;
+           cursor: pointer; 
+        }
+        .BT:hover
+        {
+            background-color: rgb(144, 33, 163);
+        }
+        .comentarios
+        {
+            width: 90%;
+            height: 200px;
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Dados de Picolé</legend>
+        Selecione um sabor
+        <select>
+            <option>morango</option>
+             <option>chocolate</option>
+              <option>nutella</option>
+               <option>kit kat</option>
+                <option>coco</option>
+                 <option>leite condensado</option>
+                  <option>laranja</option>
+                   <option>ameixa</option>          
+        </select>
+      <br> <br>
+      Escolha um acompanhamento:
+      <input type="radio" name="M&M's">
+        <input type="radio" name="fini">
+        <input type="radio" name="jujuba">
+        <br> <br>
+        Escolha a cor da embalagem:
+        <input type="checkbox"> &nbsp;amarela &nbsp; 
+        <input type="checkbox"> &nbsp;verde &nbsp;
+        <input type="checkbox"> &nbsp;azul &nbsp;
+    <br> <br>
+    Escolha a cor do palito:
+    <input type="color">
+    </fieldset>
+    <fieldset>
+        <legend>Dados da entrega</legend>
+        Endereço: <input type="text">
+        <br> <br> 
+        Cidade: <input type="text">
+         <br> <br>
+         Data da entrega:  <input type="text">
+          <br> <br>
+          Comentários: <br>
+          <textarea class="comentarios"></textarea> 
+    </fieldset>
+    <button class="BT">ENVIAR</button> 
+    <button class="BT">CANCELAR</button>     
+</body>
+</html>
